@@ -1,0 +1,149 @@
+/** Custom CSS **/
+@import "less/mixins.less";
+@import "less/variables.less";
+@import "less/buttons.less";
+/**=========================**/
+
+body, html {
+	height: 100%;
+}
+.container-fluid {
+	position: relative;
+	min-height: 100%;
+}
+
+.row {
+	height: 100%;
+}
+.col-md-8 {
+	height: 100%;
+}
+
+h2 {
+	 font-family: 'Open Sans', sans-serif, Ariel;
+	 font-size: 40px;
+	 //font-weight: bold;
+	 margin: 35px;
+
+	 a {
+	 	color: #fff;
+	 	text-decoration: none; 
+	 &:active, &:visited, &:hover {
+	 	color: #fff;
+        text-decoration: none; 
+  }
+}
+}
+
+h3 {
+	 font-family: 'Roboto', sans-serif, Ariel;
+	 font-weight: bold;
+	 border-bottom: 1px solid #ddd;
+	 padding: 0 0 15px 0;
+	 margin-bottom: 20px;
+}
+.jumbotron {
+	margin: 17px 0 0 0;
+}
+
+.form-group  {
+	.clearfix();
+	
+	label, .label {
+		width: 30%;
+	}	
+}
+.form-control {
+	//width: 60%;
+}
+.list-holder {
+	width: 100%;
+}
+
+.img-holder {
+	text-align: center;
+	width: 202px;
+	img {
+	border: 8px solid #929292;
+
+	height: 240px;	
+	margin: 0 auto;
+	}
+
+}
+
+.upload-holder {
+	margin: 20px 0 0 27px;
+
+	input[type="file"] {
+		color: transparent;
+		  outline: none;
+	}
+	input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+      outline: none;
+    }
+   input[type="file"]::before {
+  content: 'Upload Image';
+  display: inline-block;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  color: #fff;
+  	.btn();
+	.btn-primary();
+	.btn-lg();
+
+}
+}
+
+
+
+header {
+	background-color: #f46b75;
+}
+.btn-holder {
+	margin: 15px;
+}
+.details-holder {
+	.form-control {
+		background-color: #EAEAEA;
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 80px;
+	background-color: #f46b75;
+	.m-t-40();
+}
+
+
+/** Utility Classes **/
+.m-l-10 {
+	margin-left: 10px;
+} 
+.m-r-10 {
+	margin-right: 10px;
+}
+.m-t-10 {
+	margin-left: 10px;
+}
+.m-t-40 {
+	margin-top: 40px;
+}  
+.m-b-10 {
+	margin-right: 10px;
+}
+.width-60 {
+    width: 60%;
+}
